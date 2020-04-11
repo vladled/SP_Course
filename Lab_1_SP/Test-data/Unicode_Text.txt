@@ -1,0 +1,24 @@
+A common problem for many devops teams is a fragmented workflow. Inefficiency can be infuriating.
+
+You know how it goes: individuals on the team tend to work independently. Coding solo, engineers regularly create large segments of code outside of version control. Once a developer is “done,” they add their work into the basecode. Then another team manually runs tests to verify the build.
+
+For years, many teams have found this division of labor annoying and problematic.
+
+When multiple developers separately commit large changes to version control, they create complex bugs, multiply time-intensive fixes, and increase the time it takes to do more manual testing. Everything slows down.
+
+This clogs up your build cycle with tedious debugging, slows down the time to production, and ultimately undercuts your company’s profits.
+
+What is Continuous Integration?
+Continuous integration (CI) is a process aimed at cutting out build cycle inefficiencies by allowing developers to compile the team’s code from a shared version control repository. CI also allows you to automate testing so you can set up the system to automatically run unit tests or integration tests for example.
+
+CI automatically monitors the commits that each engineer makes. This streamlines the build and verification of code so that testing is not so high-stakes. It’s recognized as a best practice in the software development community.
+
+CI is run on a shared server that increases visibility, so all the engineers on a project are aware of changes in the base code day in and day out. In addition, you can configure the server to alert developers when they submit failing code so that they can fix any errors they introduce.
+
+Using CI automation allows you to shorten development release cycles and improve product quality. CI essentially lets your team use machines do what they do best, so humans can do what brings more value to a company. And it’s all customizable to your project and your needs.
+
+CI environments can provide various levels of testing automation.
+
+CI/CD servers, including Jenkins, allow your team to set up the tests that you need to run.
+
+There are various levels of testing that you can implement. The most basic test is whether or not the code actually compiles. Code can also be “linted” or checked for style. Your team can write more complex tests to cover other bases as well, including unit, integration, stress, regression testing, etc.
