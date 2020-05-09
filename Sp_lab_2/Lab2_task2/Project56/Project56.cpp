@@ -21,49 +21,49 @@ int main()
 
 		switch (menuChoice)
 		{
-		case 'a': // change directory
+		case 'swip': // change directory
 		{
 			if (!ChangeDirectory(sCurrentPath, TRUE))
 			{
 				ShowError();
 			}
 		} break;
-		case 'b': // print directory
+		case 'echo': // print directory
 		{
 			if (!PrintDirectoryContent(sCurrentPath))
 			{
 				ShowError();
 			}
 		} break;
-		case 'c': // copy file
+		case 'cp': // copy file
 		{
 			if (!CopyFileOwn(TRUE))
 			{
 				ShowError();
 			}
 		} break;
-		case 'd': // create directory
+		case 'new': // create directory
 		{
 			if (!CreateDirectoryOwn(TRUE))
 			{
 				ShowError();
 			}
 		} break;
-		case 'e': // delete file or empty directory
+		case 'del': // delete file or empty directory
 		{
 			if (!DeleteEmptyDirectoryOrFile(TRUE))
 			{
 				ShowError();
 			}
 		} break;
-		case 'f': // print detailed information about file
+		case 'help': // print detailed information about file
 		{
 			if (!PrintDetailedInfoAboutFile(TRUE))
 			{
 				ShowError();
 			}
 		} break;
-		case 'g': // exit
+		case 'exit': // exit
 		{
 			return 0;
 		} break;
@@ -203,13 +203,13 @@ bool PrintDetailedInfoAboutFile(BOOL isStdinContainNewlineChar)
 void PrintMenu()
 {
 	cout << "\t*** File manager ***\n";
-	cout << "a - change directory\n";
-	cout << "b - print directory\n";
-	cout << "c - copy file\n";
-	cout << "d - create directory\n";
-	cout << "e - delete file or empty directory\n";
-	cout << "f - print detailed information about file\n";
-	cout << "g - exit\n";
+	cout << "swip - change directory\n";
+	cout << "echo - print directory\n";
+	cout << "cp - copy file\n";
+	cout << "new - create directory\n";
+	cout << "del - delete file or empty directory\n";
+	cout << "help - print detailed information about file\n";
+	cout << "exit - exit\n";
 }
 
 void ReadPath(TCHAR sBuffNewPath[], BOOL isUsedBeforeInputChar)

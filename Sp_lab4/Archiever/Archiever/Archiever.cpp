@@ -39,12 +39,12 @@ int _tmain(INT argc, TCHAR** argv)
 	GetFullPathName(argv[3], MAX_BUF, dirOrFile, NULL);
 
 	switch (act[0]) {
-	case TEXT('a'):
+	case TEXT('zip'):
 		_stprintf(cmdLine, TEXT("%s %s %s %s"),
 			utilPath, act, archName, dirOrFile);
 		break;
 
-	case TEXT('e'):
+	case TEXT('unzip'):
 		_stprintf(cmdLine, TEXT("%s %s %s"),
 			utilPath, act, archName);
 
